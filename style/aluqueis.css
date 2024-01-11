@@ -1,0 +1,84 @@
+.pesquisa {
+    margin: 25px auto;
+    display: flex;
+    gap: 5px;
+}
+
+.pesquisar {
+    width: 70vw;
+    max-width: 420px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    border: 2px solid #f6bb25;
+    outline: none;
+}
+
+.btn-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 34px;
+    border-radius: 8px;
+    border: 2px solid #f6bb25;
+    background-color: rgb(92 89 243);
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.btn-pesquisa:hover {
+    background-color: #f6bb25;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 2rem;
+}
+
+.card {
+    padding: 15px;
+    background: #353397;
+    border-radius: 20px;
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.nome {
+    font-weight: bold;
+    color: #f6bb25;
+}
+
+.btn {
+    padding: 5px 8px;
+    background: #6f6de1;
+    border-radius: 8px;
+    border: 2px solid #f6bb25;
+    color: #f6bb25;
+}
+
+#nada {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f6bb25;
+    font-size: 150%;
+    text-align: center;
+}

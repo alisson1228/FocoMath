@@ -1,0 +1,257 @@
+.pesquisa {
+    margin: 25px auto;
+    display: flex;
+    gap: 5px;
+}
+
+.pesquisar {
+    width: 70vw;
+    max-width: 420px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 182, 45);
+    outline: none;
+}
+
+.btn-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 34px;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 182, 45);
+    background-color: rgb(79, 219, 79);
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.btn-pesquisa:hover {
+    background-color: rgb(255, 182, 45);
+}
+
+.pdfs {
+    display: grid;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.pdfs a {
+    text-decoration: none;
+}
+
+.pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(228, 228, 228);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.39);
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 20px 30px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.capa {
+    width: 100%;
+    height: auto;
+    max-width: 240px;
+    background: cornsilk;
+    border-radius: 10px;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    aspect-ratio: 4/4;
+}
+
+.capa img {
+    width: 100%;
+    height: 100%;
+}
+
+.pdf .titulo {
+    font-size: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    width: auto;
+    padding: 5px 15px;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.ler {
+    background: rgb(230, 94, 15);
+    cursor: pointer;
+}
+
+.baixar {
+    background: rgb(69, 212, 40);
+}
+
+.baixar ion-icon.md.hydrated {
+    font-size: 20px;
+}
+
+.leitor {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #56565678;
+    top: 80px;
+    left: 0;
+    z-index: 3;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* background: #ffffff00; */
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    border: rebeccapurple;
+    border: 2.5px solid white;
+    font-size: 30px;
+    transform: rotate(45deg);
+    color: white;
+    cursor: pointer;
+}
+
+#leitor-tela {
+    width: 90%;
+    max-width: 1000px;
+    height: 80%;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+#leitor-config {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgb(26, 168, 26);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#leitor-pagina {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#leitor-contagem {
+    padding: 5px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+#leitor-apresentar {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: scroll;
+    display: grid;
+    justify-items: center;
+}
+
+.btn1 {
+    width: auto;
+    height: 30px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid orange;
+    color: rgb(255, 255, 255);
+    background: rgb(55, 196, 50);
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid orange;
+    color: rgb(255, 255, 255);
+    background: rgb(55, 196, 50);
+}
+
+.the-canvas {
+    padding: 20px 30px;
+}
+
+#nada {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #252525;
+    font-size: 150%;
+    text-align: center;
+}
+
+.carregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrega {
+    animation: carregar 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #f59d1a;
+    height: 50px;
+    width: 50px;
+}
+
+#carrega2 {
+    animation: carregar 1s infinite;
+    border: 6px solid #e5e5e500;
+    border-radius: 50%;
+    border-top-color: #2dc019;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-delay: .1s;
+}
+
+@keyframes carregar {
+    to {
+        transform: rotate(1turn);
+    }
+}

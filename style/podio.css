@@ -1,0 +1,136 @@
+@media (min-width: 500px) {
+    .ranking {
+        width: calc(200px + 6vw);
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .rank {
+        display: flex;
+    }
+}
+
+@media (max-height: 529px) {
+    .ranking {
+        width: calc(200px + 6vw);
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .rank {
+        display: none;
+    }
+
+}
+
+@media (max-width: 499px) and (orientation: portrait){
+    .ranking {
+        width: 45vw;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .rank {
+        display: flex;
+    }
+}
+
+
+.ranking {
+    z-index: 1;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin-top: 80px;
+    display: grid;
+    background: rgb(228, 228, 228);
+    box-shadow: -10px 8px 20px 0px rgb(65 65 65 / 49%);
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    height: calc(100vh - 80px - 5px);
+}
+
+.podio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    gap: 5px;
+    background: rgb(105, 179, 90);
+    font-size: 20px;
+}
+
+.podioi {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.rank {
+    width: auto;
+    height: 100%;
+    background: rgb(228, 228, 228);
+    transition: 0.4s;
+}
+
+.rank:hover {
+    transform: scale(1.1);
+}
+
+.rank p:nth-child(1) {
+    font-size: 15px;
+}
+
+.rank p:nth-child(2) {
+    font-size: 12px;
+}
+
+.r1 {
+    display: flex;
+}
+
+.r2 {
+    display: flex;
+}
+
+.r3 {
+    display: flex;
+}
+
+.r4 {
+    display: flex;
+}
+
+.r5 {
+    display: flex;
+}
+
+.po {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    background: rgb(128, 103, 103);
+}
+
+.p1 {
+    background: #e9b124;
+}
+
+.p2 {
+    background: #919191;
+}
+
+.p3 {
+    background: #cd7f32;
+}
+
+.name-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 50px);
+    color: #808080;
+}

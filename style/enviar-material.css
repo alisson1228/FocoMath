@@ -1,0 +1,231 @@
+main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 80px;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(90% - 2rem);
+    max-width: 600px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin: 40px 0;
+    padding: 1rem;
+    border-radius: 20px;
+    gap: 1rem;
+    color: orange;
+}
+
+.titulobox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.titulobox input {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#imagem {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#enviar {
+    width: calc(90% - 30px);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #23c523;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    gap: 1rem;
+    color: white;
+    font-weight: bold;
+    border: 2px solid orange;
+    text-align: center;
+}
+
+#enviar2 {
+    display: flex;
+    flex-direction: column;
+    background: #23c523;
+    padding: 10px 30px;
+    margin: 20px auto;
+    border-radius: 20px;
+    gap: 1rem;
+    color: white;
+    font-weight: bold;
+    border: 2px solid orange;
+    text-align: center;
+    font-size: 20px;
+}
+
+.imgq {
+    width: 100%;
+}
+
+.questao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: 90%;
+}
+
+.questao p {
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+}
+
+#alterA1:checked ~ #alterboxA1 {
+    background: orange;
+    color: white;
+}
+
+#alterB1:checked ~ #alterboxB1 {
+    background: orange;
+    color: white;
+}
+
+#alterC1:checked ~ #alterboxC1 {
+    background: orange;
+    color: white;
+}
+
+.alterLabel {
+    padding: 5px;
+    border: 2px solid #29c729;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#leitor-tela {
+    max-width: 1000px;
+    min-height: 500px;
+    max-height: 600px;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px black;
+    flex-direction: column;
+}
+
+#leitor-config {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background: rgb(26, 168, 26);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#leitor-pagina {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#leitor-contagem {
+    padding: 5px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+#leitor-apresentar {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: scroll;
+    display: grid;
+    justify-items: center;
+}
+
+.btn1 {
+    width: auto;
+    height: 30px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid orange;
+    color: rgb(255, 255, 255);
+    background: rgb(55, 196, 50);
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid orange;
+    color: rgb(255, 255, 255);
+    background: rgb(55, 196, 50);
+}
+
+.the-canvas {
+    padding: 20px 30px;
+}
+
+#nada {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #252525;
+    font-size: 150%;
+    text-align: center;
+}
+
+.carregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+#carrega {
+    animation: carregar 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #f59d1a;
+    height: 50px;
+    width: 50px;
+}
+
+#carrega2 {
+    animation: carregar 1s infinite;
+    border: 6px solid #e5e5e500;
+    border-radius: 50%;
+    border-top-color: #2dc019;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation-delay: .1s;
+}
+
+@keyframes carregar {
+    to {
+        transform: rotate(1turn);
+    }
+}

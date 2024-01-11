@@ -1,0 +1,109 @@
+@media (min-width: 500px) {
+    .estudo { 
+        width: calc(100vw - (280px + 2vw + 35px));
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .baner {
+        width: calc(100% - (200px + 6vw));
+        max-height: 35vh;
+    }
+}
+
+@media (max-height: 499px) {
+    .estudo { 
+        width: calc(100vw - (270px + 4vw + 25px));
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .baner {
+        width: calc(100% - (200px + 6vw));
+        max-height: 40vh;
+    }
+
+    .baner picture {
+        margin-top: -5vw;
+    }
+}
+
+@media (max-width: 499px) and (orientation: portrait) {
+    .estudo { 
+        width: calc(100vw - (280px + 2vw + 20px));
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .baner {
+        width: calc(100% - (45vw));
+        max-height: 35vh;
+    }
+
+}
+
+@media (max-width: 469px) and (orientation: portrait) {
+    .estudo { 
+        width: calc(100vw - (280px + 2vw + 20px));
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .baner {
+        width: calc(100% - (45vw));
+        max-height: 35vh;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .baner {
+        
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 899px) {
+    .baner {
+        
+        align-items: flex-start;
+
+    }
+}
+
+.estudo {
+    display: grid;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 1rem;
+}
+
+.estudo a {
+    text-decoration: none;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(75px + 5vw);
+    background: rgb(37, 180, 56);
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+    
+.botao:hover {
+    background: #cd7f32;
+}
+
+.baner {
+    /*height: 35vh;*/
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    /*max-height: 35vh;*/
+}
